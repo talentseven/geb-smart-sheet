@@ -1,31 +1,52 @@
-# Example Geb and Gradle Project
+# Smart Sheet Testing Project 
 
-[![Build Status][build_status]](https://circleci.com/gh/geb/geb-example-gradle/tree/master)
-
-## Description
-
-This is an example of incorporating Geb into a Gradle build. It shows the use of Spock and JUnit 4 tests.
-
-The build is setup to work with Firefox and Chrome. Have a look at the `build.gradle` and the `src/test/resources/GebConfig.groovy` files.
-
-## Usage
-
-The following commands will launch the tests with the individual browsers:
-
-    ./gradlew chromeTest
-    ./gradlew firefoxTest
-
-To run with all, you can run:
-
-    ./gradlew test
-
-Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Windows.
-
-## Questions and issues
-
-Please ask questions on [Geb user mailing list][mailing_list] and raise issues in [Geb issue tracker][issue_tracker].
+This project contains a simple test case: 'As a Smart Sheet User, I am able to add/delete Text/Number Column in a Grid Sheet.'   
+```
+    GridSheetSpec 
+```
 
 
-[build_status]: https://circleci.com/gh/geb/geb-example-gradle/tree/master.svg?style=shield&circle-token=38eb8de9af8f889922b91624a7943c474c0c3617 "Build Status"
-[mailing_list]: https://groups.google.com/forum/#!forum/geb-user
-[issue_tracker]: https://github.com/geb/issues/issues
+### Framework Introduction 
+
+```
+    groovyVersion = '2.4.12'
+    gebVersion = '2.3'
+    seleniumVersion = '3.6.0'
+    chromeDriverVersion = '73.0.3683.68'
+    geckoDriverVersion = '0.18.0'
+```
+
+
+## Getting Started
+
+Checkout the repository:
+```
+    git clone git@github.com:talentseven/geb-smart-sheet.git
+```
+
+Note: To run geckoDriver on Windows, It is required to add a path in System's PATH Environmental Variable. 
+Instruction can be found here:  https://www.softwaretestinghelp.com/geckodriver-selenium-tutorial/
+
+
+### Build tte Project
+
+    Using Intellij import build.gradle file from the repository. Then build the project, all the dependencies 
+    should be downloaded by Gradle 
+
+
+## Running the tests
+    Navigate to \src\test\groovy\GebSpecs\GridSheetSpec.groovy file, you should be able to run the job:
+
+
+## Reference: Geb-Gradle-Sample 
+```
+  Example Geb and Gradle Project: https://github.com/geb/geb-example-gradle
+```
+
+
+
+
+
+
+
+

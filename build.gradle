@@ -73,3 +73,8 @@ tasks.withType(Test) {
 tasks.withType(GroovyCompile) {
     groovyOptions.forkOptions.memoryMaximumSize = '256m'
 }
+
+//setPreference("capability.policy.default.Window.frameElement.get","allAccess")
+
+
+
